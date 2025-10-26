@@ -20,3 +20,13 @@ contract PollStation{
 
   }
   
+  function getCandidateName () public view returns (string [] memory) {
+      return candidateNames;
+  }
+
+  function getvote (string memory _candidateNames) public view returns (uint256) {
+      return voteCount[_candidateNames];
+  }
+
+
+}
